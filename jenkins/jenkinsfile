@@ -43,7 +43,7 @@ pipeline {
             }
             post {
                 always {
-                    junit 'bugtracker-frontend/test-results.xml'
+                    junit checksName: '', testResults: 'bugtracker-frontend/test-results.xml'
                 }
             }
         }
