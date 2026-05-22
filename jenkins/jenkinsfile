@@ -43,7 +43,7 @@ pipeline {
             }
             post {
                 always {
-                    junit checksName: '', testResults: 'bugtracker-frontend/test-results.xml'
+                    junit allowEmptyResults: true, testResults: 'bugtracker-frontend/**/test-results.xml'
                 }
             }
         }
